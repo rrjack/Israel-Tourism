@@ -1,0 +1,153 @@
+/* styling common to everything */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+/* styling the body */
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/4/c47.jpg");
+    background-size: cover;
+}
+
+
+
+/* styling the main div or starting div */
+
+
+#main-div-signin{
+    max-width: 75%;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+
+
+
+
+
+/* styling signin form */
+
+#div2signinform{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 10% auto;
+    padding: 15px;
+    text-align: center;
+    background-size: cover;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+#h1{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    text-shadow: green 3px 3px 5px;
+    color: #ffffff;
+    padding-top: 10%;
+}
+
+
+#div2signinform input{
+    display: block;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+
+
+.txtb{
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+}
+
+.signin-btn{
+    margin-top: 4%;
+    margin-bottom: 20px;
+    background: lightgreen;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    transition: 0.8s;
+    font-size: 15px;
+}
+
+.signin-btn:hover{
+    transform: scale(0.96);
+}
+
+
+#div2signinform a{
+    text-decoration: none;
+    color: green;
+    font-family: "monsterrat", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+}
+
+#div2signinform a:hover{
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+.form-group{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    #div2signinform{
+        width: 400px;
+    }
+}
+
+
+
+
+#home-link{
+    margin-top: 3rem;
+    /*margin-left: 1rem;*/
+    color: #ffffff;
+    text-decoration: none;
+    text-underline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.btn-home-link{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    background: lightgreen;
+    padding: 1rem;
+    border-radius: 3px;
+}
+
+.btn-home-link a:visited{
+    color: #ffffff;
+}

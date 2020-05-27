@@ -1,0 +1,37 @@
+<link rel="icon" href="{{ url_for('static', filename='img/logo/fav-icon1.png') }}" type="image/png" sizes="16x16">
+
+    <div id="main-div-signin">
+
+    <div id="home-link">
+        <a class="btn-home-link" href="/">Home</a>
+    </div>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signin.css') }}">
+
+
+        <div id="div2signinform">
+
+            <h1 id="h1">Sign In and continue</h1>
+            {% include 'includes/_messages.html' %}
+
+            <form action="" method="POST">
+
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" name="username" class="txtb" value={{request.form.username}}>
+                </div>
+
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" name="password" class="txtb" value={{request.form.password}}>
+                </div>
+
+                <input type="submit" value="Click here to Login" class="signin-btn">
+                <a id="account-yet" href="/signup">Don't have account yet?</a>
+
+            </form>
+
+        </div>
+
+    </div>

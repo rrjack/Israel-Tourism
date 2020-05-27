@@ -1,0 +1,242 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jud_chris_vid.css') }}"/>
+
+        <!-- coding for quotation image elements -->
+        <div id="quot">
+            <p id="p1"> "Do not forsake wisdom, and she will protect you; love her, and she will watch over you. Wisdom is supreme; therefore get wisdom. Though it cost all you have, get understanding." &nbsp;&nbsp;&nbsp;Proverbs 4:6-7</p>
+        </div>
+
+
+        <div id="vid_link">
+            <div class="vid_link_heading"><a href="#" title="old testament">Old Testament</a></div>
+            <div class="vid_link_heading" id="new_test"><a href="#new" title="watch new testament videos">New Testament</a></div>
+        </div>
+
+        <div class="testaments_div">
+            <h1 class="testaments_h1">OLD TESTAMENT</h1>
+        </div>
+
+        <div id="video-old-test">
+
+            <div class="div1">
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/1_The_Book_of_Genesis.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book1.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/2_The_Book_of_Exodus.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book2.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/3_The_Book_of_Leviticus.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book3.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/4_The_Book_of_Numbers.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book4.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/5_The_Book_of_Deuteronomy.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book5.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/6_The_Book_of_Joshua.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book6.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/7_The_Book_of_Judges.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book7.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/8_The_Book_of_Ruth.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book8.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/9_The_Book_of_Samuel.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book9.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/10_The_Book_of_Samuel.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book10.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/11_The_Book_of_Kings.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book11.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/12_The_Book_of_Kings.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book12.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/13_The_Book_of_Chronicles.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book13.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/14_The_Book_of_Chronicles.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book14.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/15_The_Book_of_Ezra.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book15.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/16_The_Book_of_Nehemiah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book16.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/17_The_Book_of_Esther.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book17.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/18_The_Book_of_Job.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book18.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/19_The_Book_of_Psalms.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book19.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/20_The_Book_of_Proverbs.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book20.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/21_The_Book_of_Ecclesiastes.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book21.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/22_The_Book_of_Song_of_Songs.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book22.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/23_The_Book_of_Isaiah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book23.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/24_The_Book_of_Jeremiah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book24.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                 <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/25_The_Book_of_Lamentations.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book25.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/26_The_Book_of_Ezekiel.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book26.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/27_The_Book_of_Daniel.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book27.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/28_The_Book_of_Hosea.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book28.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/29_The_Book_of_Joel.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book29.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/30_The_Book_of_Amos.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book30.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/31_The_Book_of_Obadiah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book31.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/32_The_Book_of_Jonah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book32.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/33_The_Book_of_Micah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book33.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/34_The_Book_of_Nahum.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book34.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/35_The_Book_of_Habakkuk.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book35.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/36_The_Book_of_Zephaniah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book36.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/37_The_Book_of_Haggai.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book37.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/38_The_Book_of_Zechariah.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book38.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/old_testamant/39_The_Book_of_Malachi.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/old_test/book39.png') }}"></video>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="testaments_div" id="testaments">
+            <h1 class="testaments_h1"><a name="new"></a>NEW TESTAMENT</h1>
+        </div>
+
+        <div id="video-old-test">
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/1_New_Testament_Overview.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n1.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/2_Matthew_part_1.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n2.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/3_Matthew_part_2.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n3.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/4_Mark.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n4.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/5_Luke_part_1.mkv') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n5.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/6_Luke_part_2.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n6.png') }}"></video>
+
+            </div>
+
+
+
+
+            <div class="div1">
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/7_John_part_1.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n7.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/8_John_part_2.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n8.png') }}"></video>
+
+                <video class="vid" src="{{ url_for('static', filename='vids/new_testamant/9_.mp4') }}" width="320" height="180" controls="controls" poster="{{ url_for('static', filename='posters/new_test/n9.png') }}"></video>
+
+            </div>
+
+
+
+
+        </div>
+
+
+
+{% endblock %}

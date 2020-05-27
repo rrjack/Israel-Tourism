@@ -1,0 +1,555 @@
+
+/* styling of quotation image */
+
+
+#quot{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url("../img/applied-images/g35.jpg");
+    background-size: cover;
+}
+
+#p1{
+    margin-top: 50px;
+    padding: 10px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+}
+
+#p2{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 60px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+#p3{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 35px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+#p4{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/* styling of image slider */
+.slider{
+    overflow: hidden;
+    margin-top: 7%;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    background: url("../img/applied-images/bible4.jpg");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 5px lightgreen;
+    animation:slider 50s infinite linear;
+    z-index: -1;
+}
+
+@keyframes slider {
+    0%{background: url("../img/applied-images/bible4.jpg"); background-size: 100% 100%;}
+    10%{background: url("../img/applied-images/bible5.jpg"); background-size: 100% 100%;}
+    20%{background: url("../img/applied-images/bible8.jpg"); background-size: 100% 100%;}
+    30%{background: url("../img/applied-images/bible9.jpg"); background-size: 100% 100%;}
+    40%{background: url("../img/applied-images/bible10.jpg"); background-size: 100% 100%;}
+    50%{background: url("../img/applied-images/bible15.jpg"); background-size: 100% 100%;}
+    60%{background: url("../img/applied-images/bible18.jpg"); background-size: 100% 100%;}
+    70%{background: url("../img/applied-images/bible19.jpg"); background-size: 100% 100%;}
+    80%{background: url("../img/applied-images/bible23.jpg"); background-size: 100% 100%;}
+    90%{background: url("../img/applied-images/bible24.jpg"); background-size: 100% 100%;}
+}
+
+
+
+
+
+.items-overview{
+    font: normal 16px Tahoma;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of middle contents switch on 1st items*/
+
+#btn-toggle1{
+    margin-top: 7%;
+    position: relative;
+}
+
+.middle-item1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box1{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: bold 18px Tahoma;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+.box1 a{
+    text-decoration: none;
+}
+
+.box1 a:hover{
+    color: #314237;
+}
+
+.box1 a:visited{
+    color: #314237;
+}
+
+
+@media (max-width: 991px){
+    .middle-item1, .middle-item2, .bible-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* styling of glowing button switch on 1st*/
+
+.glowing1{
+    width: 100%;
+}
+
+#on-off1{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input{
+    -webkit-appearance: none;
+    transition: .5s;
+}
+
+input:hover + #on-off1{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #on-off1{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of middle contents switch on 2nd items*/
+
+#btn-toggle2{
+    margin-top: 7%;
+    position: relative;
+}
+
+.middle-item2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box2{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: bold 18px Tahoma;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+.box2 a{
+    text-decoration: none;
+}
+
+.box2 a:hover{
+    color: #314237;
+}
+
+.box2 a:visited{
+    color: #314237;
+}
+
+
+
+/* styling of glowing button switch on 2nd */
+
+.glowing2{
+    width: 100%;
+}
+
+#on-off2{
+    background: darkslategray;
+    border: 1px solid #333;
+    /*font: bold 40px Great Vibes;*/
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #on-off2{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #on-off2{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+/* styling of about us */
+#aboutus{
+    margin-top: 7%;
+    position: relative;
+}
+
+.aboutus-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box3{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: normal 30px Great Vibes;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+
+/* styling of glowing button about us */
+
+.aboutus-glowing{
+    width: 100%;
+}
+
+#aboutus-onoff{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #aboutus-onoff{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #aboutus-onoff{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* styling of ETU CHURCH */
+
+#etu{
+    margin-top: 7%;
+    position: relative;
+}
+
+.etu-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.etu-box{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: normal 25px Great Vibes;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+
+/* styling of glowing button ETU Church */
+
+.etu-glowing{
+    width: 100%;
+}
+
+#etu-onoff{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #etu-onoff{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #etu-onoff{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+/* styling of image slider ETU CHURCH */
+#etuslider{
+    overflow: hidden;
+    z-index: -1;
+}
+#etuslider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s etuslider infinite;
+}
+
+#etuslider figure img{
+    width: 20%;
+    float: left;
+    height: 80vh;
+    background-size: 100% 100%;
+
+}
+
+@keyframes etuslider {
+    0%{left: 0;}
+    20%{left: 0;}
+    25%{left: -100%;}
+    45%{left: -100%;}
+    50%{left: -200%;}
+    70%{left: -200%;}
+    75%{left: -300%;}
+    95%{left: -300%;}
+    100%{left: -400%;}
+}
+
+
+.contact{
+    font: normal 20px Tahoma;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of middle contents switch on Holy Bible*/
+
+#bible{
+    margin-top: 7%;
+    position: relative;
+}
+
+.bible-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box0{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: bold 18px Tahoma;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+.box0 a{
+    text-decoration: none;
+}
+
+.box0 a:hover{
+    color: #314237;
+}
+
+
+.box0 a:visited{
+    color: #314237;
+}
+
+
+
+/* styling of glowing button switch on Holy Bible */
+
+.bible-glowing{
+    width: 100%;
+}
+
+#on-off0{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input{
+    -webkit-appearance: none;
+    transition: .5s;
+}
+
+input:hover + #on-off0{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #on-off0{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}

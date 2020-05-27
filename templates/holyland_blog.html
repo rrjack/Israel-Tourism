@@ -1,0 +1,80 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <style>
+
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/holyland_blog.css') }}"/>
+
+        <div id="quot">
+            <marquee behavior="" direction=""><p id="p2">Welcome {{ session.username }}, welcome to holyland blog. Like, share discuss and post your comments here.</p></marquee>
+        </div>
+        {% include 'includes/_messages.html' %}
+
+
+
+
+        <div class="body-content">
+            <div class="container">
+
+                <div class="content">
+
+                    <!--- fetching it by using for loop from the database. We will do for looping of 4 posts -->
+
+                    <div class="sub-content">
+                        <hr/>
+                        <a href="/add_post" target="_blank"><h2 id="blog-post-heading">Add Your Post</h2></a>
+                        <hr/>
+                        {% for post in posts %}
+                        <h3>{{ post.title }}</h3>
+                        <p>{{post.body | safe}}</p>
+
+
+                        <div id="below-info">
+                            <a href="edit_post/{{post.id}}" target="_blank"><input type="submit" value="Edit" id="edit" /></a>
+                            <form action="{{url_for('delete_post', id = post.id)}}" method="post">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <a href=""><input type="submit" value="Delete" id="delete" /></a>
+                            </form>
+                            <div id="posted_by">
+                                <small id="posted-by">Posted by {{post.author}} on {{post.create_date}}</small>
+                            </div> <br/>
+                            <hr/>
+                        </div>
+                        {% endfor %}
+
+                    </div>
+
+                    <div class="older-post">
+                        <br/>
+                        <a class="btn-older-post" href="#">OLDER POSTS →</a>
+                        <a class="btn-newer-post" href="#">← NEWER POSTS</a>
+                        <br/><br/><hr/>
+                    </div>
+
+                </div>
+
+                <div class="sidebar">
+
+                    <div class="vid-1 side"><video class="viddivinsidediv" src="{{ url_for('static', filename='vids/blog/Billy-Graham-Who-is-Jesus.mp4') }}" controls></video></div>
+                    <div class="vid-1 side"><video class="viddivinsidediv" src="{{ url_for('static', filename='vids/blog/Adam-pyramid.mp4')}}" controls></video></div>
+                    <div class="vid-1 side"><video class="viddivinsidediv" src="{{ url_for('static', filename='vids/blog/Jeremiah-Bible-Prophecy.mp4')}}" controls></video></div>
+                    <div class="vid-1 side"><video class="viddivinsidediv" src="{{ url_for('static', filename='vids/blog/starting-of-end.mp4')}}" controls></video></div>
+                    <div class="vid-1 side"><video class="viddivinsidediv" src="{{ url_for('static', filename='vids/blog/Temple-Institute.mp4')}}" controls></video></div>
+                    <div id="post-heading"><h2>Trending posts</h2></div>
+                    <div class="sidebar-1 side"><h3 class="side-para">Post-1</h3></div>
+                    <div class="sidebar-2 side"><h3 class="side-para">Post-2</h3></div>
+                    <div class="sidebar-3 side"><h3 class="side-para">Post-3</h3></div>
+                    <div class="sidebar-4 side"><h3 class="side-para">Post-4</h3></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+{% endblock %}

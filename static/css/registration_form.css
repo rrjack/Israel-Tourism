@@ -1,0 +1,180 @@
+/* styling of quotation image */
+
+
+#quot{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url("../img/applied-images/g35.jpg");
+    background-size: cover;
+    height: 15rem;
+}
+
+
+#p3{
+    margin: 10px auto;
+    margin-top: 6rem;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+
+
+
+
+/* styling reg form form */
+
+#reg_form_subdiv{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*margin: 10% auto;*/
+    margin-top: 5rem;
+    padding: 10px;
+    text-align: center;
+    background: url("../img/4/c69.jpg");
+    background-size: cover;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px lightgreen;
+
+}
+
+#h1{
+    text-align: center;
+    font-family: 'Bad Script', cursive;
+    font-size: 30px;
+    text-shadow: green 3px 3px 5px;
+    color: #ffffff;
+    padding-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+.reg_form input{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    padding: 0 14px;
+    height: 33px;
+    text-align: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 2%;
+}
+
+.reg_form select{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    /*padding: 0 14px;*/
+    padding: 8px;
+    height: 33px;
+    align-items: center;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    margin: 2%;
+}
+
+
+
+.heading{
+    margin: 2.5%;
+    margin-top: 3%;
+    float: left;
+}
+
+
+
+
+
+.txtb{
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 6px;
+    float: right;
+    text-align: center;
+}
+
+#reg{
+    display: block;
+    padding: 8px;
+    text-align: center;
+    background: lightgreen;
+    float: left;
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 30%;
+    font-size: 15px;
+}
+
+
+.register{
+    /*
+    display: block;
+    margin: 20px auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    height: 35px;
+    font-size: 20px;
+    background: lightgreen;
+    color: #fff;
+    border-radius: 44px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.8s;
+    text-align: center;
+    width: 50%;
+
+    background: lightgreen;
+    padding: 8px;
+    */
+}
+
+.signup-btn:hover{
+    transform: scale(0.96);
+}
+
+
+#reg_form_subdiv a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "monsterrat", sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    transition: 0.8s;
+}
+
+#reg_form_subdiv a:hover{
+    background: rgba(0,0,0,0.3);
+}
+
+#cbox1{
+    /*display: flex;*/
+    margin-top: 4%;
+}
+
+#cbox1 input{
+    margin-top: 4%;
+}
+
+#cbox2{
+    /*display: flex;*/
+    /*margin-top: 4%;*/
+}
+
+#cbox2 input{
+    margin-top: 4%;
+}
+
+#cboxheading{
+    margin: 2.5%;
+    margin-top: 3.5%;
+    /*float: left;*/
+}
+
+input[type="checkbox"]{
+    zoom: 1.5;
+}

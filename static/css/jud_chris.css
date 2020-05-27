@@ -1,0 +1,106 @@
+
+/* styling of quotation image */
+
+
+#quot{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url("../img/applied-images/g35.jpg");
+    background-size: cover;
+}
+
+#p1{
+    margin-top: 50px;
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+    font: normal 30px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+}
+
+#p2{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* styling the main content means styling of first inside div means div2*/
+
+#div2{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 15px;
+    padding-bottom: 0px;
+    font: bold 17px Tahoma;
+    text-align: center;
+    background: aliceblue;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px #ffccff;
+}
+
+.jcdiv3{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    padding: 15px;
+    font: normal 15px Tahoma;
+    text-align: justify;
+    background: aliceblue;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px #ffccff;
+}
+
+.header_jcdiv3{
+    text-align: center;
+}
+
+
+
+
+#chris_vid{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+.chris_vid_link{
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+    font: bold 15px Tahoma;
+    background-image: linear-gradient(45deg,#ffccff,aliceblue);
+    box-shadow: 5px 5px 100px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+}
+
+#vid{
+    background-image: linear-gradient(45deg,aliceblue,#ffccff);
+    text-align: right;
+}
+
+.chris_vid_link a{
+    text-decoration: none;
+}
+
+.chris_vid_link a:visited{
+    color: #314237;
+}

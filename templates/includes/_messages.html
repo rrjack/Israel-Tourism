@@ -1,0 +1,31 @@
+<!--
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+-->
+
+<!-- this code is default code in flask documentation. We did add some extra things like bootstrap classes alert, etc-->
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/_messages.css') }}"/>
+
+    <div id="message">
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+
+            {% for category, message in messages %}
+              <div class="alert alert-{{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        {% if error %}
+            <div id='danger' class="alert alert-danger">{{error}}</div>
+        {% endif %}
+
+        {% if msg %}
+            <div id='success' class="alert alert-success">{{msg}}</div>
+        {% endif %}
+
+
+
+    </div>

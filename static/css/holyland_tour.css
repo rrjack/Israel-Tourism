@@ -1,0 +1,527 @@
+
+/* styling of quotation image */
+
+
+#quot{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url("../img/applied-images/g35.jpg");
+    background-size: cover;
+}
+
+#p1{
+    margin-top: 50px;
+    padding: 10px;
+    color: aliceblue;
+    text-align: center;
+    font: normal 60px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+}
+
+#p2{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+#p3{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of middle contents continue*/
+
+#btn-toggle1{
+    margin-top: 5%;
+    position: relative;
+}
+
+.middle-item1{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box1{
+    padding: 30px;
+    margin: 15px;
+    text-align: center;
+    font: bold 18px Tahoma;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    text-shadow: #251530 3px 3px 7px;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.box1 a{
+    text-decoration: none;
+}
+
+
+.box1 a:visited{
+    color: #314237;
+}
+
+
+.items-overview{
+    font: normal 17px Tahoma;
+    text-shadow: none;
+}
+
+
+
+@media (max-width: 991px){
+    .middle-item1, .middle-item2, .bible-content{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* styling of glowing button continue*/
+
+.glowing1{
+    width: 100%;
+}
+
+#on-off1{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input{
+    -webkit-appearance: none;
+    transition: .5s;
+}
+
+input:hover + #on-off1{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #on-off1{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* styling of places-to-visit */
+#places-to-visit{
+    margin-top: 7%;
+    position: relative;
+}
+
+
+
+
+
+
+/* styling of glowing button places to visit */
+
+.places-to-visit-glowing{
+    width: 100%;
+}
+
+#places-to-visit-onoff{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #places-to-visit-onoff{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #places-to-visit-onoff{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+/* styling of PLACES TO VISIT image slider */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    opacity: 0;
+    width: 600px;
+    background-color: rgba(255,255,255,0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h2{
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.slide .content h2, p{
+    font-family: 'Crimson Text', serif;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button{
+    border: 2px solid #ffffff;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+
+@media(max-width: 500px) {
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+
+    .slide.current .content{
+        transform: translateY(-300px);
+    }
+
+}
+
+
+/* background images */
+
+.slide:first-child{
+    background: url("../img/applied-images/amman-airport.jpg") no-repeat center center/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(2){
+    background: url("../img/applied-images/jordan-amman.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(3){
+    background: url("../img/applied-images/cairo2.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(4){
+    background: url("../img/applied-images/Pyramid.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(5){
+    background: url("../img/applied-images/nile-river-egypt.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(6){
+    background: url("../img/applied-images/Jerusalem1.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(7){
+    background: url("../img/applied-images/Bethlehem.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(8){
+    background: url("../img/applied-images/nazareth4.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(9){
+    background: url("../img/applied-images/Tel-Aviv.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(10){
+    background: url("../img/applied-images/haifa.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(11){
+    background: url("../img/applied-images/jaffa1.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(12){
+    background: url("../img/applied-images/Dead-Sea1.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(13){
+    background: url("../img/applied-images/Sea-of-Galilee1.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(14){
+    background: url("../img/applied-images/golgotha1.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(15){
+    background: url("../img/applied-images/Beersheba2.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+.slide:nth-child(16){
+    background: url("../img/applied-images/delhi-airport.jpg") no-repeat center top/cover;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling of Our Package */
+#package{
+    margin-top: 7%;
+    position: relative;
+}
+
+.package-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box3{
+    padding: 30px;
+    margin: 15px;
+    text-align: left;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.box3 p{
+    font: normal 17px Tahoma;
+}
+
+
+
+/* styling of glowing button package */
+
+.package-glowing{
+    width: 100%;
+}
+
+#package-onoff{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #package-onoff{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #package-onoff{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* styling of terms and conditions */
+#termscon{
+    margin-top: 7%;
+    position: relative;
+}
+
+.termscon-content{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    text-decoration: none;
+    background: aliceblue;
+}
+
+.box4{
+    padding: 30px;
+    margin: 15px;
+    text-align: left;
+    background: aliceblue;
+    box-shadow: 5px 5px 10px lightgreen;
+    flex: 1;
+    color: #314237;
+    border-radius: 1px;
+    overflow: hidden;
+}
+
+.box4 p{
+    font: normal 17px Tahoma;
+}
+
+
+/* styling of glowing button terms and conditions */
+
+.termscon-glowing{
+    width: 100%;
+}
+
+#termscon-onoff{
+    background: darkslategray;
+    border: 1px solid #333;
+    font: bold 25px Tahoma;
+    padding: 10px;
+    color: lavender;
+    text-align: center;
+    border-radius: 1px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+input:hover + #termscon-onoff{
+    color: gray;
+    border: 1px solid #444;
+}
+
+input:checked + #termscon-onoff{
+    color: lightgreen;
+    border: 1px solid lightgreen;
+    text-shadow: 0 0 10px lightgreen;
+    box-shadow: 0 0 10px lightgreen, inset 0 0 20px lightgreen;
+    background: #fff;
+}

@@ -1,0 +1,177 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/registration_form.css') }}"/>
+
+        <!--
+        <div id="backdiv">
+            <a href="holyland_tour.html"><input type="submit" value="Back" class="register-btn"/></a>
+        </div>
+        -->
+
+        <!-- coding for quotation image elements -->
+        <div id="quot">
+            <p id="p3">get registered and experience holyland tour with us</p>
+        </div>
+
+
+        <div id="reg_form_subdiv">
+            {% include 'includes/_messages.html' %}
+
+            <form name="registration_details" action="/registration_form" method="post">
+                <h1 id="h1">Get your registration for holyland tour</h1>
+                <div class="reg_form">
+                    <h4 class="heading">Name*: </h4>
+                    <input type="text" placeholder="Name" name="name" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Username*: </h4>
+                    <input type="text" value="{{ session.username }}" name="username" class="txtb" readonly="readonly"/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Mobile No*:</h4>
+                    <input type="text" placeholder="Mobile No" name="mob_no" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Email Id*:</h4>
+                    <input type="text" placeholder="Email" name="email" class="txtb" required=""/>
+                </div>
+                <!--
+                <div class="reg_form">
+                    <h4 class="heading">Holyland Tour Reg No*:</h4>
+                    <input type="text" placeholder="Reg No" class="txtb"/>
+                </div>
+                -->
+                <div class="reg_form">
+                    <h4 class="heading">Alternate Mobile No:</h4>
+                    <input type="text" placeholder="Alternate Mobile No" name="alter_mob_no" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Alternate Email:</h4>
+                    <input type="text" placeholder="Alternate Email" name="alter_email" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Tour Season:</h4>
+                    <!--
+                    <select name="tour-season" class="txtb">
+                        <option value="tour-season" id="opt">May</option>
+                        <option value="tour-season" id="opt">November</option>
+                    </select>
+                    -->
+                    <input type="text" placeholder="May/November" name="tour_season" class="txtb" required=""/>
+                </div>
+
+
+                <div class="reg_form">
+                    <h4 class="heading">House No*./Street*: </h4>
+                    <input type="text" placeholder="House No*./Street*" name="house_no" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Home Area*: </h4>
+                    <input type="text" placeholder="Area" name="home_area" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Home City*: </h4>
+                    <input type="text" placeholder="City" name="city" class="txtb" required=""/>
+                </div>
+
+                 <div class="reg_form">
+                    <h4 class="heading">Country*: </h4>
+                    <input type="text" placeholder="Country" name="country" class="txtb" required=""/>
+                </div>
+
+                 <div class="reg_form">
+                    <h4 class="heading">Your State*: </h4>
+                    <input type="text" placeholder="Select your state" name="state" class="txtb" required=""/>
+                </div>
+
+                 <div class="reg_form">
+                    <h4 class="heading">Postal Code*: </h4>
+                    <input type="text" placeholder="Pin Code" name="zip_code" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Your Church Name*: </h4>
+                    <input type="text" placeholder="Church Name with address" name="church_name" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Your Qualification: </h4>
+                    <input type="text" placeholder="Qualification" name="qualification" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Your Profession: </h4>
+                    <input type="text" placeholder="Proffesion" name="profession" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Person with disability: </h4>
+                    <!--
+                    <select name="disability" class="txtb">
+                        <option value="disability" id="opt">No</option>
+                        <option value="disability" id="opt">Yes</option>
+                    </select>
+                    -->
+                    <input type="text" placeholder="Type Yes/No" name="disability" class="txtb" required=""/>
+                </div>
+
+                <div class="reg_form">
+                    <h4 class="heading">Tour holyland earlier: </h4>
+                    <!--
+                    <select name="tour_earlier" class="txtb">
+                        <option value="tour-earlier" id="opt">No</option>
+                        <option value="tour-earlier" id="opt">Yes</option>
+                    </select>
+                    -->
+                    <input type="text" placeholder="Did you tour holyland earlier with us, Type Yes/No" name="tour_earlier" class="txtb" required=""/>
+                </div>
+
+                 <div class="reg_form">
+                    <h4 class="heading">Food Preference*: </h4>
+                    <!--
+                    <select name="food" class="txtb">
+                        <option value="food" id="opt">Vegetarian</option>
+                        <option value="food" id="opt">Non vegetarian</option>
+                    </select>
+                    -->
+                    <input type="text" placeholder="Type Veg/Non veg" name="food" class="txtb" required=""/>
+                </div>
+
+                 <div class="reg_form">
+                    <h4 class="heading">Age Group*: </h4>
+                    <!--
+                    <select name="age" class="txtb">
+                        <option value="age-group" id="opt">0-15</option>
+                        <option value="age-group" id="opt">16-45</option>
+                        <option value="age-group" id="opt">46-60</option>
+                        <option value="age-group" id="opt">60+</option>
+                    </select>
+                    -->
+                    <input type="text" placeholder="0-15/16-45/45-60" name="age" class="txtb" required=""/>
+                </div>
+
+                <!--
+                <div id="reg_form">
+                    <h4 class="heading">Click on green button: </h4>
+                    <input type="submit" value="Click here to register" class="register-btn"/>
+                </div>-->
+
+                <div class="reg_form">
+                    <input type="submit" value="Click here to register" class="txtb" id="reg" required=""/>
+                </div>
+
+            </form>
+
+
+        </div>
+
+
+{% endblock %}

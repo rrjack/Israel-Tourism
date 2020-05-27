@@ -1,0 +1,18 @@
+complete css:
+https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+
+complete javascript:
+https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+
+complete javascript bundle:
+https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js
+
+
+#success{
+    background: #ff9999;
+    color: #b30000;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 16px;
+    text-align: center;
+}

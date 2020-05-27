@@ -1,0 +1,41 @@
+#message{
+    background: #c6ecc6;
+    color: #1e7b1e;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    #message{
+        padding: 0.5rem;
+    }
+}
+
+
+
+/*
+
+#danger{
+    background: #ff9999;
+    color: #b30000;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+#success{
+    background: #80ffaa;
+    color: #006622;
+    padding: 1rem;
+    height: 3rem;
+    font-size: 16px;
+    text-align: center;
+}
+
+*/

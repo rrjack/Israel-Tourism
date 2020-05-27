@@ -1,0 +1,344 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/holyland_tour.css') }}"/>
+
+
+
+
+        <!-- coding for quotation image elements -->
+        <div id="quot">
+            <p id="p1">walk where Jesus walked!</p>
+            <p id="p2">sign up or sign in and get registered</p>
+            <p id="p3">come and experience holyland tour with us</p>
+        </div>
+
+
+
+
+
+
+        <!-- coding for middle content items-->
+        <div id="btn-toggle1">
+            <div class="glowing1">
+                <label>
+                    <input type="checkbox" name=""/><h1 id="on-off1">Continue</h1>
+                </label>
+            </div>
+            <div class="middle-item1">
+                <div class="box1"><a href="/signup" target="_blank">SIGN UP</a><p class="items-overview"><br/>already signed up then go to sign in and complete registration and experience holyland tour with us...</p></div>
+                <div class="box1"><a href="/holyland_tour#places-to-visit">PLACES TO VISIT & TOUR SCHEDULE</a><p class="items-overview"><br/>Israel, a biblical holy land, middle eastern country. Most sacred site, Jerusalem. Explore it for more places...</p></div>
+                <div class="box1"><a href="/signin" target="_blank">SIGN IN</a><p class="items-overview"><br/>already signed up then click here to sign in, get registerd and experience holyland tour with us...</p></div>
+            </div>
+            <div class="middle-item1">
+                <div class="box1"><a href="/holyland_tour#package">OUR PACKAGE</a><p class="items-overview"><br/>click here and read carefully our package, go to our tour schedule...</p></div>
+                <div class="box1"><a href="/registration_form" target="_blank">TOUR REGISTRATION</a><p class="items-overview"><br/>We have limited seats, first come first serve, hurry up, read our package scheme and terms and conditions, and complete your registration, click here...</p></div>
+                <div class="box1"><a href="/holyland_tour#termscon">TERMS AND CONDITIONS</a><p class="items-overview"><br/>click here and read carefully our terms and conditions...</p></div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!-- coding for places to visit -->
+        <div id="places-to-visit">
+            <div class="places-to-visit-glowing">
+                <label>
+                    <input type="checkbox" name=""/><h1 id="places-to-visit-onoff"><a name="places-to-visit"></a>Places To Visit & Tour Schedule</h1>
+                </label>
+            </div>
+
+            <div class="places-to-visit-content">
+
+                <div class="slider">
+
+                    <div class="slide current">
+                        <div class="content">
+                            <h2>Day 1</h2>
+                            <p>We start our journey from our church address and we reach new delhi. Our members can reach New delhi by any medium, but we all will be assemble at New delhi airport and then our journey starts. Israel, Jorden, and Egypt visa will be provided at New delhi airport. Assemble at New Delhi airport and then departs from New Delhi to Amman. Dinner and overnight stay in Jordan.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 2 <br/>Amman, capital of Jordan</h2>
+                            <p>Jordan officially the Hashemite Kingdom of Jordan, is an Arab country in Western Asia, on the East Bank of the Jordan River. Jordan is bordered by Saudi Arabia to the south and the east, Iraq to the north-east, Syria to the north and Israel and Palestine (West Bank) to the west.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 3 <br/>Cairo, capital of Egypt</h2>
+                            <p>Egypt, where israelites were slave and Moses leads them out of Egypt through the wilderness to Mount Sinai, where Yahweh reveals himself to his people and gave Moses the ten commandments. Egypt is a Mediterranean country bordered by the Gaza Strip and Israel to the northeast, the Gulf of Aqaba and the Red Sea to the east, Sudan to the south, and Libya to the west.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 4 <br/>The Great Pyramid of Giza in Egypt</h2>
+                            <p>The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex bordering present-day El Giza, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 5 <br/>The Nile river in Egypt</h2>
+                            <p>The Nile, which is about 6,650 km (4,130 mi) long, is an "international" river as its drainage basin covers eleven countries, namely, Tanzania, Uganda, Rwanda, Burundi, the Democratic Republic of the Congo, Kenya, Ethiopia, Eritrea, South Sudan, Republic of the Sudan and Egypt. In particular, the Nile is the primary water source of Egypt and Sudan.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 6<br/>Jerusalem, capital of Israel</h2>
+                            <p>Jerusalem, the city of David, is considered as the holiest land in the world and certainly one of the best places to visit in Israel. Popular tourist attractions in Jerusalem are The Western Wall, Mar Saba Monastery, Visit Yad Vashem, Temple Mount and Dome of Rocks, City of David and Hezekiah’s Tunnel, and St. George’s Monastery.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 7<br/>Bethlehem</h2>
+                            <p>The birthplace of Jesus is certainly one of the best places to visit in Israel. Popular tourist attractions in Bethlehem are Shepherd’s Field, Church of the Nativity, St. Catherine’s Church, Manger Square, Old Bethlehem Museum, and Herodium Hill. Herodium Hill – almost 10 km from Jerusalem. Mount of Olives lies to the north of the Herodium and  Dead Sea in the east.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 8<br/>Nazareth</h2>
+                            <p>Nazareth, the village of Jesus, the city in Israel with biblical history where the angel Gabriel told Mary she would bear a child.. Nazareth town has been known as the place where Jesus spent his adolescent days. Popular tourist attractions in Nazareth are Church of Annunciation, Megiddo National Park, St. Joseph Church, St. Gabriel’s Church, Mt. of Precipice Lookout Point, and Holy Caves & Ancient Bath House of Nazareth.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 9<br/>Tel Aviv</h2>
+                            <p>coastal city has some of the most happening beaches in Israel, such as Gordon Beach, Frishman Beach, and Banana Beach. With an extended coastline, Tel Aviv offers a lot of water activities and access to its rich marine parks. Popular tourist attractions in Tel Aviv are Yarkon River and Park Hayarkon, Carmel Market for Flea & street market, Dizengoff Circle and Surrounds, Tel Aviv Museum of Art, and Bialik Street.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 10<br/>Haifa</h2>
+                            <p>The port city, owing to its strategic location, is a massive lure for tourists. Gardens, beaches, promenades, and monasteries adorn the city that has been outlined by a steep cliff and a perfect landscape. Popular tourist attractions in Haifa are Marvel at the Baha’i Gardens, Mount Carmel, Tel Megiddo – ancient site, Carmel National Park, Elijah’s Cave, and Downtown Haifa.</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 11 <br/>Jaffa</h2>
+                            <p>The city has been mentioned in the holy Bible to be named after Noah’s son Japhet. Popular tourist attractions in Jaffa are Jaffa Port, Jaffa Slope Park, Clock Tower, HaPisgah Gardens, Great Mosque, Ilana Goor Museum, and music & entertainment shows at flea market area every Thursday night.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 12 <br/>Dead Sea</h2>
+                            <p>Located almost 400 m below the sea level in the heart of Israel, Dead Sea is nature’s true wonder. It is mentioned in the bible many times where Ezekiel's prophecy fulfilled about Dead sea, for more, read ezekiel chapter 47. Popular tourist attractions near the Dead Sea are Masada Mountains & fortress – archeological wonder, Mujib Nature Reserve, Kerak Castle, Dead Sea Museum, Lot’s Cave, Adventure City, and Cave of Prophet Lut.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 13 <br/>Sea of Galilee</h2>
+                            <p>Sea of Galilee is called a lake of Jesus Christ. The Sea of Galilee is an attraction for Christian pilgrims who visit Israel to see the places where Jesus performed miracles according to the New Testament, such as his walking on water, calming the storm and feeding the multitude.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 14 <br/>Golgotha Mountain</h2>
+                            <p>Golgotha, or Calvary, was, according to the Gospels, a site immediately outside Jerusalem's walls where Jesus was crucified. Matthew's and Mark's gospels translate the term to mean "place of [the] skull". Then we move to Gethsemane Garden. And then move to Beersheba and stay overnight there.</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 15, last day<br/>Beersheba</h2>
+                            <p>In the Bible, Beersheba means "Well of Seven" or "Well of the Oath". Beersheba is mainly dealt with in the Hebrew Bible in connection with the Patriarchs Abraham and Isaac, who both dig a well and close peace treaties with King Abimelech of Gerar at the site. The prophet Elijah took refuge in Beersheba when Jezebel ordered him killed (I Kings 19:3).</p>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="content">
+                            <h2>Day 15 evening</h2>
+                            <p>We move to Tel Aviv airport in the evening and departs from there to New Delhi.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+                    <button id="prev"><i class="fas fa-arrow-left"></i></button>
+                    <button id="next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- coding for Our package -->
+        <div id="package">
+            <div class="package-glowing">
+                <label>
+                    <input type="checkbox" name=""/><h1 id="package-onoff"><a name="package"></a>Our Package</h1>
+                </label>
+            </div>
+            <div class="package-content">
+                <div class="box3"><p>1. Our package includes 15 days and 14 nights.</p> <br/>
+                <p>2. Package amount: 1,40,000 includes everything.</p> <br/>
+                <p>3. Special 10 percant discount for first 10 members.</p> <br/>
+                <p>4. Israel, Jorden, and Egypt visa will be provided at New delhi airport.</p> <br/>
+                <p>5. We start our journey from our church address and we reach new delhi. Our members can reach New delhi by any medium, but we    all will be assemble at New delhi airport andthen our journy starts.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- coding for terms and conditions -->
+        <div id="termscon">
+            <div class="termscon-glowing">
+                <label>
+                    <input type="checkbox" name=""/><h1 id="termscon-onoff"><a name="termscon"></a>Terms & Conditions</h1>
+                </label>
+            </div>
+            <div class="termscon-content">
+
+                <div class="box4"><p>1. Payment has to be done in between one month once the tour is scheduled.</p> <br/>
+                <p>2. Smoking drinking will not be permitted.</p> <br/>
+                <p>3. Departure will be from new delhi airports india. All the members from anywhere around the world should come to new delhi airport or our home town kanpur.</p> <br/>
+                <p>4. Below 15 years kids are not allowed alone, he or she must have guardian or parent.</p> <br/>
+                <p>5. Leaving in middle of the tour is not allowed, if you do so, you only will be responsible, you can leave at your own risk and there wiil be no refund of your money in that case.</p> <br/>
+                <p>6. In case if you are canceling the tour, payment will not be refunded from last week onwords of the tour.</p> <br/>
+                <p>7. You are not suppose to fill wrong details, otherwise you will be responsible if anything happens.</p> <br/>
+                <p>8. We have limited seats so first come first serve.</p> <br/>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- script for middle items continue -->
+    <script>
+        $(document).ready(function(){
+            $('.middle-item1').hide();
+            $('#on-off1').click(function(){
+                $('.middle-item1').toggle('slow');
+                if($(this).text() === 'Continue'){
+                    $(this).text('Close');
+                }
+                else{
+                    $(this).text('Continue');
+                }
+            });
+        });
+    </script>
+
+
+
+    <!-- script for places to visit -->
+    <script>
+        $(document).ready(function(){
+            $('.places-to-visit-content').hide();
+            $('#places-to-visit-onoff').click(function(){
+                $('.places-to-visit-content').toggle('slow');
+                if($(this).text() === 'Places To Visit & Tour Schedule'){
+                    $(this).text('Close');
+                }
+                else{
+                    $(this).text('Places To Visit & Tour Schedule');
+                }
+            });
+        });
+    </script>
+
+    <script src="{{ url_for('static', filename='js/holyland_tour.js') }}"></script>
+
+
+
+    <!-- script for our package -->
+    <script>
+        $(document).ready(function(){
+            $('.package-content').hide();
+            $('#package-onoff').click(function(){
+                $('.package-content').toggle('slow');
+                if($(this).text() === 'Our Package'){
+                    $(this).text('Close');
+                }
+                else{
+                    $(this).text('Our Package');
+                }
+            });
+        });
+    </script>
+
+
+
+
+    <!-- script for terms and conditions -->
+    <script>
+        $(document).ready(function(){
+            $('.termscon-content').hide();
+            $('#termscon-onoff').click(function(){
+                $('.termscon-content').toggle('slow');
+                if($(this).text() === 'Terms & Conditions'){
+                    $(this).text('Close');
+                }
+                else{
+                    $(this).text('Terms & Conditions');
+                }
+            });
+        });
+    </script>
+
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+how to create those forms where login is required using flask
+
+
+
+
+@app.route('/registration_form', methods=['GET', 'POST'])
+@is_logged_in
+def registration_form():
+    if request.method == 'POST':
+        # Get Form Fields
+        name = request.form['name']
+        email = request.form['email']
+        username = request.form['username']
+        #password_candidate = request.form['password']
+
+
+        # create cursor
+        cur = mysql.connection.cursor()
+
+        # Get signup_form by username
+        result = cur.execute("SELECT * FROM signup_form WHERE username = %s AND name = %s AND email = %s", [username], ['name'], ['email'] )
+
+        if session['logged_in'] and session['name'] and session['email'] and session['username']:
+            pass
+        else:
+            error = 'Invalid username, name or email'
+            return render_template('registration_form.html', error=error)
+
+        # Close connection
+        cur.close()
+
+
+
+    else:
+        error = 'Username not found'
+        return render_template('registration_form.html', error=error)
+
+    return render_template('registration_form.html')

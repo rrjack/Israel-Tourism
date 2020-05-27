@@ -1,0 +1,183 @@
+/* styling of quotation image */
+
+
+#quot{
+    background-color: rgba(255, 255, 255, 0.5);
+    background: url("../img/applied-images/g35.jpg");
+    background-size: cover;
+}
+
+#p1{
+    margin-top: 50px;
+    text-align: center;
+    padding: 10px;
+    color: aliceblue;
+    font: normal 40px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+}
+
+
+#p2{
+    margin: 10px auto;
+    padding: 20px;
+    color: aliceblue;
+    font: normal 35px Great Vibes;
+    text-shadow: green 3px 3px 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* styling the main content */
+
+#div2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: justify;
+    background: aliceblue;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+
+
+/* styling of click here to see map */
+#maplinkbelow{
+    text-decoration: none;
+    font: bold 17px Tahoma;
+    background-image: linear-gradient(45deg,aliceblue,lightgreen);
+}
+
+
+#aip1{
+    text-align: left;
+    font: normal 15px Tahoma;
+}
+
+
+
+
+
+/* styling of content */
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content h3{
+    font: bold 20px Tahoma;
+}
+
+.content p{
+    font: normal 15px Tahoma;
+}
+
+.content span{
+    font: bold 16px Tahoma;
+}
+
+
+
+
+
+
+/* styling of map-content div3*/
+#div3map{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: justify;
+    background: aliceblue;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+.map-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.map-content h1{
+    font: bold 22px Tahoma;
+    margin: 20px auto;
+}
+
+.map-content a{
+    color: #314237;
+    text-decoration: none;
+}
+
+.map-content a:visited{
+    color: #314237;
+}
+
+
+
+
+
+
+
+/* styling of aidiv4map */
+#aidiv4map{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    align-items: center;
+    background: aliceblue;
+    border-radius: 1px;
+    box-shadow: 5px 5px 10px lightgreen;
+}
+
+
+
+
+
+
+
+/*styling of Israel map */
+.map h1{
+    text-align: center;
+    font: bold 20px Tahoma;
+    margin: 20px;
+    padding: 5px;
+}
+
+
+
+
+
+
+@media (max-width: 900px) {
+    .map img{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    #aidiv3 img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .content img{
+        height: 300px;
+    }
+}
+
